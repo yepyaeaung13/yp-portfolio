@@ -12,6 +12,7 @@ import IconEX from "../icons/IconEX";
 import IconGit from "../icons/IconGit";
 import IconLinux from "../icons/IconLinux";
 import IconMySQL from "../icons/IconMySQL";
+import IconPHP from "../icons/IconPHP";
 
 export default function AboutMeAndSkill() {
   return (
@@ -71,6 +72,7 @@ export default function AboutMeAndSkill() {
           </div>
         </div>
 
+        <span className="sr-only"> skill section </span>
         <div className="w-2/3 mx-auto">
           <ul className="flex flex-wrap gap-x-16 gap-y-10 items-center text-xs text-tertiary font-bold justify-center">
             <li>
@@ -99,6 +101,9 @@ export default function AboutMeAndSkill() {
             </li>
             <li>
               <IconEX />
+            </li>
+            <li>
+              <IconPHP />
             </li>
             <li>
               <IconMySQL />

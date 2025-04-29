@@ -63,8 +63,8 @@ export default function NavbarAndHero() {
               Github
             </a>
             <a
-              href="/Ye_Pyae_Aung_Fronend_Resume.pdf"
-              download={"Ye_Pyae_Aung_Fronend_Resume.pdf"}
+              href="/Ye_Pyae_Aung_Frontend_Resume.pdf"
+              download={"Ye_Pyae_Aung_Frontend_Resume.pdf"}
               target="_blank"
               title="Resume"
               className="active:scale-95 duration-150"
