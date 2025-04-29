@@ -61,7 +61,7 @@ export default function Footer() {
           </ul>
 
           <div className="flex justify-center gap-5">
-            <p className="text-sm text-secondary flex items-center gap-1">
+            <div className="text-sm text-secondary flex items-center gap-1">
               <span className="">2025</span>
               <IconCopyRight />
               <h1 className="text-tertiary font-medium [word-spacing:-2px]">
@@ -70,7 +70,7 @@ export default function Footer() {
                 <span className="text-secondary">UNG</span>
               </h1>
               , All rights reserved
-            </p>
+            </div>
           </div>
         </div>
       </div>

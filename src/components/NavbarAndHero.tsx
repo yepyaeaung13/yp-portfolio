@@ -38,7 +38,9 @@ export default function NavbarAndHero() {
                     className={`flex items-center gap-2 ${
                       activeLink === link.id ? "text-accent" : ""
                     }`}
-                    onClick={() => setActiveLink(link.id)}
+                    onClick={() => {
+                      setActiveLink(link.id)
+                    }}
                   >
                     {link.id === activeLink ? (
                       <CodeWithText text={link.name} />
@@ -62,9 +64,10 @@ export default function NavbarAndHero() {
             </a>
             <a
               href="/Ye_Pyae_Aung_Fronend_Resume.pdf"
-              download={"/Ye_Pyae_Aung_Fronend_Resume.pdf"}
+              download={"Ye_Pyae_Aung_Fronend_Resume.pdf"}
               target="_blank"
               title="Resume"
+              className="active:scale-95 duration-150"
             >
               <IconDoc />
             </a>
