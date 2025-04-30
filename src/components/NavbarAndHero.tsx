@@ -16,7 +16,7 @@ export default function NavbarAndHero() {
   const [activeLink, setActiveLink] = useState(navLinks[0].id);
   return (
     <section id="home" className="bg-primary py-10">
-      <div className="max-w-[1100px] mx-auto">
+      <div className="max-w-[1100px] mx-auto max-sm:px-5">
         {/* header nav bar section  */}
         <div className="flex justify-between items-center">
           <h1 className="text-tertiary font-extrabold text-2xl [word-spacing:-8px]">
@@ -26,7 +26,7 @@ export default function NavbarAndHero() {
           </h1>
 
           {/* nav links  */}
-          <div className="text-tertiary text-sm font-bold">
+          <div className="text-tertiary text-sm font-bold md:block hidden">
             <ul className="flex gap-10 ">
               {navLinks.map((link) => (
                 <li
@@ -53,7 +53,7 @@ export default function NavbarAndHero() {
             </ul>
           </div>
 
-          <div className="text-secondary text-sm flex gap-10">
+          <div className="text-secondary text-sm flex md:gap-10 gap-5">
             <a
               href="https://github.com/yepyaeaung13"
               target="_blank"
@@ -74,17 +74,17 @@ export default function NavbarAndHero() {
           </div>
         </div>
         {/* hero section */}
-        <div className="w-full flex">
-          <div className="space-y-20">
-            <div className="mt-28 pl-16 space-y-10">
+        <div className="w-full flex max-sm:relative">
+          <div className="z-20 space-y-20">
+            <div className="md:mt-28 mt-16 md:pl-16 space-y-10">
               <h1 className="bg-accent inline-block text-xs p-2">
                 Front End Developer
               </h1>
-              <h2 className="text-3xl text-white">
+              <h2 className="inline-block text-3xl text-white bg-primary-dark/50">
                 Talk is cheap,
                 <br /> show me the code.
               </h2>
-              <p className="text-tertiary mt-5 text-xs w-96 leading-5">
+              <p className="text-tertiary mt-5 text-xs md:w-96 leading-5">
                 I’m a frontend developer with a passion for building web
                 applications. I love to learn new technologies and improve my
                 skills.
@@ -111,7 +111,7 @@ export default function NavbarAndHero() {
             </div>
           </div>
 
-          <div className="flex justify-center items-center">
+          <div className="max-sm:absolute top-0 left-0 z-10 flex justify-center items-center">
             <img src={coding} alt="" className="mt-20 w-5/6" />
           </div>
         </div>

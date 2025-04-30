@@ -17,9 +17,9 @@ import IconPHP from "../icons/IconPHP";
 export default function AboutMeAndSkill() {
   return (
     <section id="about-me" className="bg-primary-dark">
-      <div className="max-w-[1100px] mx-auto py-20 space-y-36">
-        <div className="flex gap-36">
-          <div className="w-1/2 space-y-1.5">
+      <div className="max-w-[1100px] mx-auto max-sm:px-5 py-20 md:space-y-36 space-y-20">
+        <div className="flex max-sm:flex-col md:gap-36 gap-20">
+          <div className="md:w-1/2 space-y-1.5">
             <div className="bg-primary p-5 relative z-10 space-y-3 shadow-[0_20px_20px_5px_rgba(0,0,0,0.25)] rounded-lg">
               <div className="flex justify-between">
                 <h1 className="text-accent text-xl font-medium">Front End</h1>
@@ -53,7 +53,7 @@ export default function AboutMeAndSkill() {
             </div>
           </div>
 
-          <div className="w-1/2 space-y-5">
+          <div className="md:w-1/2 space-y-5">
             <h1 className="text-xs text-secondary">introduce</h1>
             <h1 className="text-3xl text-white [word-spacing:-5px]">
               Hello! I'm Ye Pyae Aung
@@ -73,8 +73,8 @@ export default function AboutMeAndSkill() {
         </div>
 
         <span className="sr-only"> skill section </span>
-        <div className="w-2/3 mx-auto">
-          <ul className="flex flex-wrap gap-x-16 gap-y-10 items-center text-xs text-tertiary font-bold justify-center">
+        <div className="md:w-2/3 mx-auto">
+          <ul className="flex flex-wrap md:gap-x-16 gap-x-10 gap-y-10 items-center text-xs text-tertiary font-bold justify-center">
             <li>
               <IconHTML />
             </li>

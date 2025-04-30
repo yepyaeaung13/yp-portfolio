@@ -1,10 +1,10 @@
 export default function Works() {
   return (
     <section id="works" className="bg-primary-dark-two">
-      <div className="max-w-[1100px] mx-auto py-10 space-y-36">
+      <div className="max-w-[1100px] mx-auto max-sm:px-5 py-10 space-y-36">
         {/* works section  */}
-        <div className="flex px-20 gap-24">
-          <div className="w-1/2 flex flex-col justify-center items-center gap-24">
+        <div className="flex max-sm:flex-col md:px-20 md:gap-24 gap-16">
+          <div className="md:w-1/2 flex flex-col justify-center items-center md:gap-24 gap-16">
             <div className="space-y-5">
               <h1 className="text-xs text-secondary">works</h1>
               <h1 className="text-2xl text-white [word-spacing:-5px]">
@@ -18,8 +18,8 @@ export default function Works() {
 
             {/* Project card  */}
             <div className="w-full h-96 bg-[#31313A] shadow-2xl rounded-lg overflow-hidden">
-              <div className="p-10">
-                <div className="flex justify-between">
+              <div className="md:p-10 px-5 py-3">
+                <div className="flex max-sm:flex-col max-sm:gap-2 justify-between">
                   <h1 className="text-white text-xl font-medium">Commerce</h1>
                   <div className="flex gap-2 items-center">
                     <a
@@ -43,7 +43,7 @@ export default function Works() {
                 </span>
               </div>
 
-              <div className="flex justify-between items-center mt-6">
+              <div className="flex justify-between items-center md:mt-6 mt-10">
                 {/* Rotated Image */}
                 <img
                   src="/commerce.jpg"
@@ -66,10 +66,10 @@ export default function Works() {
           </div>
 
           {/* works cards  */}
-          <div className="w-1/2 flex flex-col gap-24 items-center justify-center">
+          <div className="md:w-1/2 flex flex-col md:gap-24 gap-16 items-center justify-center">
             {/* card 1 */}
             <div className="w-full h-96 bg-[#31313A] shadow-2xl rounded-lg overflow-hidden">
-              <div className="flex justify-between p-10">
+              <div className="flex max-sm:flex-col max-sm:gap-2 justify-between md:p-10 px-5 py-3">
                 <h1 className="text-accent text-xl font-medium">Portfolio</h1>
                 <div className="flex gap-2 items-center">
                   <a
@@ -89,7 +89,7 @@ export default function Works() {
                 </div>
               </div>
 
-              <div className="flex justify-between items-center mt-6">
+              <div className="flex justify-between items-center md:mt-6 mt-10">
                 {/* Rotated Image */}
                 <img
                   src="/portfolio.jpg"
@@ -100,7 +100,7 @@ export default function Works() {
             </div>
 
             <div className="w-full h-96 bg-[#31313A] shadow-2xl rounded-lg overflow-hidden">
-              <div className="flex justify-between p-10">
+              <div className="flex  max-sm:flex-col max-sm:gap-2 justify-between md:p-10 px-5 py-3">
                 <h1 className="text-white text-xl font-medium">To do app</h1>
                 <div className="flex gap-2 items-center">
                   <a
@@ -120,7 +120,7 @@ export default function Works() {
                 </div>
               </div>
 
-              <div className="flex justify-between items-center mt-6">
+              <div className="flex justify-between items-center md:mt-6 mt-10">
                 {/* Rotated Image */}
                 <img
                   src="/to-do-app.png"
